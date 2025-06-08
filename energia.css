@@ -1,0 +1,165 @@
+/* Importar fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Cores do cabeçalho - Verde "quadra" */
+.cabecalho {
+    background: linear-gradient(to right, #008000, #228B22); /* Verde escuro e verde floresta */
+    color: white;
+    padding: 80px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Garante que o texto do cabeçalho esteja centralizado */
+}
+
+.cabecalho h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 3px solid #008000;
+}
+
+.nav-link {
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #3CB371 !important; /* Verde menta para o hover */
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+}
+
+.card-text {
+    line-height: 1.8;
+}
+
+/* Centraliza o texto justificado com largura máxima */
+.text-justify.mx-auto {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo geral para imagens com Bootstrap */
+.img-fluid {
+    border-radius: 15px;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Essencial para 'margin: auto' funcionar */
+    margin: 30px auto; /* Centraliza a imagem horizontalmente e adiciona margem superior */
+    width: 100%; /* Permite que o Bootstrap controle a largura da coluna */
+    max-width: 80%; /* Reduz o tamanho de ambas as imagens para 80% da largura da coluna */
+    transform: none; /* Remove qualquer rotação que possa ter sido aplicada anteriormente */
+}
+
+/* Removendo estilos específicos de rotação para cada imagem se existirem,
+   já que o .img-fluid agora cuida do tamanho e rotação.
+   Se você ainda tiver .img-energia-1 ou .img-energia-2 no seu CSS,
+   pode removê-los ou garantir que não apliquem 'transform'. */
+.img-energia-1, .img-energia-2 {
+    /* Não precisamos de regras específicas aqui se .img-fluid já faz o que queremos,
+       mas se quiser dar um toque único a uma delas, adicione aqui. */
+    /* Exemplo: Se quisesse a primeira imagem um pouco menor que a segunda:
+    .img-energia-1 { max-width: 70%; } */
+}
+
+
+.carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animações com Animate.css */
+.animate__animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+/* Cores dos ícones - Verde "quadra" */
+.list-unstyled li .text-warning { /* Para o sol */
+    color: #FFA500 !important; /* Laranja para o sol */
+}
+
+.list-unstyled li .text-info { /* Para o vento */
+    color: #17A2B8 !important; /* Azul turquesa para o vento */
+}
+
+.list-unstyled li .text-success { /* Para o biogás e lenha */
+    color: #228B22 !important; /* Verde floresta para checks */
+}
+
+.list-unstyled li .text-primary { /* Para a hidrelétrica */
+    color: #007BFF !important; /* Azul padrão do Bootstrap para água */
+}
+
+/* Estilo para listas com ícones */
+.list-unstyled li {
+    margin-bottom: 8px;
+    display: flex; /* Permite alinhar ícone e texto */
+    align-items: flex-start; /* Alinha o ícone no topo do texto */
+}
+
+.list-unstyled li div {
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+}
+
+/* Acordeão */
+.accordion-button {
+    background-color: #f0f0f0; /* Cor de fundo do botão do acordeão */
+    color: #333;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e0ffe0; /* Cor de fundo quando expandido */
+    color: #008000; /* Cor do texto quando expandido */
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}

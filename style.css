@@ -1,0 +1,30 @@
+/* Seu style.css */
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Estilos do cabeçalho */
+.cabecalho {
+    background-image: url('./assets/image/MATO.jpg'); /* Exemplo de imagem */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white; /* Cor do texto para contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidade */
+    padding: 5rem 0; /* Mantenha o padding existente para o espaçamento */
+}
+
+/* Estilos da barra de navegação */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc !important;
+}
+
+/* ... seus outros estilos ... */
